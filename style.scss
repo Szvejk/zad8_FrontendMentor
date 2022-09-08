@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	background-color: gray;
+	font-family: 'Fraunces', serif;
+	font-family: 'Montserrat', sans-serif;
+	.card {
+		height: 650px;
+		width: 350px;
+		margin: 20px;
+		background-color: white;
+		border-radius: 10px;
+	}
+	header {
+		.image {
+			height: 250px;
+			width: 350px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+	}
+
+	main {
+		padding: 20px;
+		display: flex;
+		.parfum {
+			justify-content: center;
+			align-items: center;
+		}
+		h3 {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: gray;
+			font-weight: 200;
+			letter-spacing: 4px;
+			margin-bottom: 10px;
+		}
+		h1 {
+			display: flex;
+		}
+		.product {
+			color: gray;
+			line-height: 20px;
+		}
+		h2 {
+			color: rgb(11, 97, 61);
+			font-size: 30px;
+		}
+		.product,
+		h1,
+		h3,
+		h2 {
+			margin: 20px;
+		}
+
+		.prices {
+			display: flex;
+			justify-content: flex-start;
+		}
+		.old-price {
+			align-items: center;
+			justify-content: center;
+			margin-top: 25px;
+			text-decoration: line-through;
+			color: gray;
+		}
+
+		.buy {
+			height: 60px;
+			width: 300px;
+			border-radius: 10px;
+			background-color: rgb(11, 97, 61);
+			margin-bottom: 20px;
+			color: white;
+			font-weight: 800;
+		}
+
+		.fa-solid {
+			margin: 10px;
+		}
+	}
+}
