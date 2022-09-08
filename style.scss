@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 	background-color: gray;
 	font-family: 'Fraunces', serif;
-	font-family: 'Montserrat', sans-serif;
+
 	.card {
 		height: 650px;
 		width: 350px;
@@ -16,12 +16,13 @@ body {
 		border-radius: 10px;
 	}
 	header {
-		.image {
-			height: 250px;
-			width: 350px;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
-		}
+		height: 250px;
+		width: 350px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		background: url(../images/image-product-mobile.jpg) no-repeat;
+		background-image: cover;
+		text-align: center;
 	}
 
 	main {
@@ -81,6 +82,16 @@ body {
 
 		.fa-solid {
 			margin: 10px;
+		}
+	}
+}
+@media screen and (min-width: 600px) {
+	body {
+		font-size: 16px;
+		.card {
+			height: 700px;
+			width: 900px;
+        //  background: url(./images/image-product-desktop.jpg);
 		}
 	}
 }

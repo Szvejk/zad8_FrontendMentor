@@ -9,7 +9,6 @@ body {
   font-size: 14px;
   background-color: gray;
   font-family: "Fraunces", serif;
-  font-family: "Montserrat", sans-serif;
 }
 body .card {
   height: 650px;
@@ -18,11 +17,14 @@ body .card {
   background-color: white;
   border-radius: 10px;
 }
-body header .image {
+body header {
   height: 250px;
   width: 350px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background: url(../images/image-product-mobile.jpg) no-repeat;
+  background-image: cover;
+  text-align: center;
 }
 body main {
   padding: 20px;
@@ -95,4 +97,14 @@ body main .buy {
 }
 body main .fa-solid {
   margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  body .card {
+    height: 700px;
+    width: 900px;
+  }
 }/*# sourceMappingURL=style.css.map */
