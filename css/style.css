@@ -7,32 +7,14 @@
 
 body {
   font-size: 14px;
-  background-color: gray;
   font-family: "Fraunces", serif;
+  background-color: pink;
 }
-body .card {
-  height: 650px;
-  width: 350px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 10px;
-}
-body header {
-  height: 250px;
-  width: 350px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background: url(../images/image-product-mobile.jpg) no-repeat;
-  background-image: cover;
-  text-align: center;
-}
-body main {
-  padding: 20px;
+
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-body main .parfum {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -40,71 +22,125 @@ body main .parfum {
       -ms-flex-align: center;
           align-items: center;
 }
-body main h3 {
-  font-size: 14px;
+
+section {
+  width: 380px;
+  height: 700px;
+  background-color: white;
+  border-radius: 10px;
+}
+section .image {
+  background: url(../images/image-product-mobile.jpg) no-repeat;
+  background-position: cover;
+  height: 300px;
+  width: 380px;
+}
+section .desktop-img {
+  display: none;
+}
+section .card .text {
   text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 3px;
   color: gray;
-  font-weight: 200;
-  letter-spacing: 4px;
-  margin-bottom: 10px;
+  margin: 15px;
+  font-weight: 100;
 }
-body main h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body main .product {
-  color: gray;
-  line-height: 20px;
-}
-body main h2 {
-  color: rgb(11, 97, 61);
-  font-size: 30px;
-}
-body main .product,
-body main h1,
-body main h3,
-body main h2 {
-  margin: 20px;
-}
-body main .prices {
+section .card .main-text {
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 15px;
 }
-body main .old-price {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+section .card .describe {
+  font-size: 15px;
+  color: gray;
+  margin: 15px;
+  line-height: 28px;
+}
+section .card .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px;
+}
+section .card .prices .price {
+  margin-right: 20px;
+  font-size: 30px;
+  color: rgb(15, 97, 40);
+}
+section .card .prices .old-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 25px;
-  text-decoration: line-through;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: gray;
+  text-decoration: line-through;
 }
-body main .buy {
+section .card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .card .button .buy {
+  padding: 20px;
   height: 60px;
-  width: 300px;
-  border-radius: 10px;
-  background-color: rgb(11, 97, 61);
-  margin-bottom: 20px;
+  width: 200px;
+  background-color: rgb(15, 97, 40);
   color: white;
-  font-weight: 800;
-}
-body main .fa-solid {
-  margin: 10px;
+  font-weight: 600;
+  border-color: transparent;
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    font-size: 16px;
+  main .product {
+    width: 1000px;
+    margin: 0 auto;
   }
-  body .card {
+  main .desktop-img {
+    display: initial;
+    width: 500px;
     height: 700px;
-    width: 900px;
+  }
+  main .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main .box-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */

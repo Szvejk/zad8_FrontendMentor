@@ -5,93 +5,113 @@
 }
 body {
 	font-size: 14px;
-	background-color: gray;
 	font-family: 'Fraunces', serif;
+	background-color: pink;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// dlaczego sie nie centruje w pionie
+}
+
+section {
+	width: 380px;
+	height: 700px;
+	background-color: white;
+	border-radius: 10px;
+
+	.image {
+		background: url(../images/image-product-mobile.jpg) no-repeat;
+		background-position: cover;
+		height: 300px;
+		width: 380px;
+		
+	}
+.desktop-img {
+			display:none;
+		}
+
 
 	.card {
-		height: 650px;
-		width: 350px;
-		margin: 20px;
-		background-color: white;
-		border-radius: 10px;
-	}
-	header {
-		height: 250px;
-		width: 350px;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-		background: url(../images/image-product-mobile.jpg) no-repeat;
-		background-image: cover;
-		text-align: center;
-	}
-
-	main {
-		padding: 20px;
-		display: flex;
-		.parfum {
-			justify-content: center;
-			align-items: center;
-		}
-		h3 {
-			font-size: 14px;
+		.text {
 			text-transform: uppercase;
+			font-family: sans-serif;
+			letter-spacing: 3px;
 			color: gray;
-			font-weight: 200;
-			letter-spacing: 4px;
-			margin-bottom: 10px;
+			margin: 15px;
+			font-weight: 100;
 		}
-		h1 {
-			display: flex;
-		}
-		.product {
-			color: gray;
-			line-height: 20px;
-		}
-		h2 {
-			color: rgb(11, 97, 61);
-			font-size: 30px;
-		}
-		.product,
-		h1,
-		h3,
-		h2 {
-			margin: 20px;
-		}
-
-		.prices {
+		.main-text {
+			font-size: 35px;
 			display: flex;
 			justify-content: flex-start;
+			margin: 15px;
 		}
-		.old-price {
-			align-items: center;
-			justify-content: center;
-			margin-top: 25px;
-			text-decoration: line-through;
+		.describe {
+			font-size: 15px;
 			color: gray;
+			margin: 15px;
+			line-height: 28px;
 		}
+		.prices {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			margin: 15px;
 
-		.buy {
-			height: 60px;
-			width: 300px;
-			border-radius: 10px;
-			background-color: rgb(11, 97, 61);
-			margin-bottom: 20px;
-			color: white;
-			font-weight: 800;
+			.price {
+				margin-right: 20px;
+				font-size: 30px;
+				color: rgb(15, 97, 40);
+			}
+			.old-price {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: gray;
+				text-decoration: line-through;
+			}
 		}
+		.button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-		.fa-solid {
-			margin: 10px;
+			.buy {
+				padding: 20px;
+				height: 60px;
+				width: 200px;
+				background-color: rgb(15, 97, 40);
+				color: white;
+				font-weight: 600;
+				border-color: transparent;
+			}
 		}
 	}
 }
 @media screen and (min-width: 600px) {
-	body {
-		font-size: 16px;
-		.card {
-			height: 700px;
-			width: 900px;
-        //  background: url(./images/image-product-desktop.jpg);
-		}
+	main {
+		.product {
+			width: 1000px;
+		
+			margin: 0 auto;
+			
 	}
+	.desktop-img 
+	{
+		display: initial;
+		width: 500px;
+		height: 700px; 
+}
+.button {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.box-desktop {
+display: flex;
+justify-content: flex-end;
+}
+}
 }
