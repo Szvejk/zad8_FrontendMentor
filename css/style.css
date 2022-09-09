@@ -35,6 +35,9 @@ section .image {
   height: 300px;
   width: 380px;
 }
+section .box-desktop {
+  display: none;
+}
 section .desktop-img {
   display: none;
 }
@@ -135,12 +138,24 @@ section .card .button .buy {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  main .card {
+    display: none;
+  }
   main .box-desktop {
+    display: initial;
+    width: 400px;
+    height: 500px;
+  }
+  main .flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

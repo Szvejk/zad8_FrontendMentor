@@ -26,12 +26,14 @@ section {
 		background-position: cover;
 		height: 300px;
 		width: 380px;
-		
 	}
-.desktop-img {
-			display:none;
-		}
 
+	.box-desktop {
+		display: none;
+	}
+	.desktop-img {
+		display: none;
+	}
 
 	.card {
 		.text {
@@ -94,24 +96,33 @@ section {
 	main {
 		.product {
 			width: 1000px;
-		
+
 			margin: 0 auto;
-			
+		}
+		.desktop-img {
+			display: initial;
+			width: 500px;
+			height: 700px;
+		}
+		.button {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+		.card {
+			display: none;
+		}
+		.box-desktop {
+			display: initial;
+			width: 400px;
+			height: 500px;
+		}
+		.flex {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			margin:20px;
+		
+		}
 	}
-	.desktop-img 
-	{
-		display: initial;
-		width: 500px;
-		height: 700px; 
-}
-.button {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-.box-desktop {
-display: flex;
-justify-content: flex-end;
-}
-}
 }
